@@ -11,6 +11,24 @@
     margin: 3px 3px 3px 3px;
   
   }
+  .hache3inicio{
+    @extend .hacheunoinicio;
+    font-family: $fuentebarlow;
+  }
+
+  @mixin topicos ($width, $height){
+    height: $height;
+    width: $width;
+  }
+
+ .topicosani1 .topicosani2 {
+  @include topicos(10px, 10px);
+  background-color: blueviolet;
+  padding: 10em;
+ }
+          
+    
+  
   
   .grillamadre {
     display: grid;

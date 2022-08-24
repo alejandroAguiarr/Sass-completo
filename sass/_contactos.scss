@@ -7,4 +7,16 @@
   .talle {
     text-align: left;
   }
-  
+
+
+  $generos: (
+    Hombre: blue,
+    Muejer: beige,
+    Otro: pink,
+  );
+  @each $var, $color in list {
+    .maps#{$var}{
+      color: $color;
+    }
+    
+  }
