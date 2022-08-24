@@ -1,0 +1,126 @@
+
+/* Recorridos */
+.logo {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 10px hidden coral;
+    margin: 5px 5px 10px 5px;
+    font-family: 'Roboto', sans-serif;
+    position: static;
+    top: 15px;
+  }
+  
+  
+/* Grids recorridos */
+
+.recorridomom {
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "video video"
+      "promo1 promo1"
+      "promo2 promo2"
+      "footer footer";
+  
+  }
+  
+  .grillar1 {
+    grid-area: nav;
+  }
+  
+  .grillar2 {
+    grid-area: video;
+  }
+  
+  .grillar3 {
+    grid-area: promo1;
+    margin: 1em 1em 1em 1em;
+  }
+  
+  .grillar4 {
+    grid-area: promo2;
+    margin: 1em 1em 1em 1em;
+  }
+  
+  .grillar5 {
+    grid-area: footer;
+  }
+  
+  .gridsrecorridos {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 45vh 40vh;
+  }
+  
+  
+  .videorecorrido {
+    text-align: center;
+    image-orientation: flip;
+  }
+  
+  .parrafounorecorrido {
+    margin: 0, 5em;
+  }
+  
+  .h1r {
+    margin: 0, 2em;
+  }
+  
+  .h3rvideo {
+    margin: 1em;
+  }
+  
+  /* COVID-19 */
+  
+  .grillapapa {
+  
+    display: grid;
+    grid-template-areas:
+      "logo logo"
+      "covid covid"
+      "img img "
+      "txtup imgup"
+      "txtdown imgdown"
+      "footer footer";
+  }
+  
+  .covidgrilla {
+    padding: 1em 1em 1em 1em;
+  }
+  
+  .grillacero {
+    grid-area: logo;
+  }
+  
+  .grillauno {
+    grid-area: covid;
+  }
+  
+  .grillados {
+    grid-area: img;
+  }
+  
+  .grillatres {
+    grid-area: imgup;
+  }
+  
+  .grillacuatro {
+    grid-area: imgdown;
+  }
+  
+  .grillacinco {
+    grid-area: txtup;
+  }
+  
+  .grillaseis {
+    grid-area: txtdown;
+  }
+  
+  .grillasiete {
+    grid-area: footer;
+  }
+  

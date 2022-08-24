@@ -1,0 +1,162 @@
+/* iniciooooOOOooOOOOOoOoo*/
+.bodyclass {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .hacheunoinicio {
+    color: $colorzz;
+    padding: 3px;
+    border: 5px hidden;
+    margin: 3px 3px 3px 3px;
+  
+  }
+  
+  .grillamadre {
+    display: grid;
+    grid-template-areas:
+      "inicioarriba inicioarriba inicioarriba"
+      "inicio inicio inicio"
+      "fototxt fototxt fototxt"
+      "topicos topicos topicos"
+      "video video video"
+      "carrusel carrusel carrusel"
+      "footer footer footer";
+  }
+  
+  .grillamom {
+    border: 1px;
+  
+  }
+  
+  .grillainicio1 {
+    grid-area: inicio;
+  }
+  
+  .grillainicio2 {
+    grid-area: fototxt;
+  }
+  
+  .grillainicio3 {
+    grid-area: topicos;
+    text-decoration: none;
+  
+  }
+  
+  .grillainicio4 {
+    grid-area: video;
+  }
+  
+  .grillainicio5 {
+    grid-area: carrusel;
+  }
+  
+  .grillainicio6 {
+    grid-area: footer;
+  }
+  
+  .grillainicio7 {
+    grid-area: inicioarriba;
+  }
+  
+  
+  .topicos {
+    font-family: $fuentebarlow;
+    animation: move 3s ease-in-out;
+    list-style-type: none;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(30%, 0);
+    }
+  
+    50% {
+      text-shadow: 0 25px 50px #092327;
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  
+.topicos {
+    text-decoration-line: underline;
+    line-height: 23px;
+    color: black;
+  }
+  
+  
+  span {
+    color: rgb(255, 0, 0);
+  }
+  
+  
+/* fotos inicio abajo */
+div div {
+    padding: 20px;
+    list-style: none;
+  }
+
+  
+/* RESPOSIVE CELULAR INICIO  */
+
+@media (max-width:576px) {
+
+    .grillamadre {
+      grid-template-areas:
+        "inicioarriba inicioarriba"
+        "inicio inicio"
+        "fototxt fototxt"
+        "topicos topicos"
+        "footer footer";
+    }
+  
+    .grillamom {
+      border: 1px;
+    }
+  
+    .grillainicio1 {
+      grid-area: inicio;
+    }
+  
+    .grillainicio2 {
+      grid-area: fototxt;
+    }
+  
+    .grillainicio3 {
+      grid-area: topicos;
+    }
+  
+    .grillainicio4 {
+      grid-area: video;
+      display: no;
+  
+    }
+  
+    .grillainicio6 {
+      grid-area: footer;
+  
+    }
+  
+    section footer div h4 {
+      display: none;
+    }
+  
+    .grillainicio7 {
+      grid-area: inicioarriba;
+    }
+  
+    nav ul {
+      list-style: none;
+      padding: 0;
+      background: #092327;
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+  
+  }
+  
+  

@@ -1,0 +1,52 @@
+/* RESPOISIVE CELULAR COVID  */
+
+@media (max-width:576px) {
+    body {
+      background-color: rgb(55, 143, 146);
+    }
+  
+    .grillapapa {
+  
+      display: grid;
+      grid-template-areas:
+        "logo"
+        "covid"
+        "img "
+        "imgup"
+        "imgdown"
+        "txtdown"
+        "footer";
+    }
+  
+    .covidgrilla {
+      border: 1px
+    }
+  
+    .grillauno {
+      grid-area: covid;
+    }
+  
+    .grillados {
+      grid-area: img;
+      margin: 1em 1em 1em 3em;
+    }
+  
+    .grillatres {
+      grid-area: imgup;
+      height: 80%;
+      width: 80%;
+    }
+  
+    .grillacuatro {
+      grid-area: imgdown;
+      height: 80%;
+      width: 80%;
+  
+    }
+  
+    .grillaseis {
+      grid-area: txtdown;
+      margin: 0px 1em 1px 0px;
+    }
+  
+  }
