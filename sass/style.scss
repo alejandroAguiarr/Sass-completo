@@ -1,0 +1,316 @@
+
+@import "fuentes";
+@import "generales";
+@import "inicio";
+@import "variablegeneral";
+@import "nav";
+@import "covid19";
+@import "recorrido";
+@import "galeria";
+@import "contactanos";
+@import "footer";
+
+
+
+
+
+
+
+/*parrafoUno */
+
+
+/* parrafoDos */
+.parrafodos {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color {
+    color: black;
+}
+
+/* parrafoDos */
+
+
+.hachetresuno {
+    text-align: justify;
+    text-decoration-line: none;
+    color: black;
+    padding: 3px;
+    border: 5px hidden;
+    margin: 10px 3px 10px 3px;
+
+}
+
+.hachetresdos {
+    text-align: justify;
+    text-decoration-line: none;
+    padding: 3px;
+}
+
+/* topicos index  */
+
+.topicos {
+    text-decoration-line: underline;
+    line-height: 23px;
+    color: black;
+    background-color: #092327;
+}
+
+/* Guia joven BA */
+span {
+    color: rgb(255, 0, 0);
+}
+
+/* Recorridos */
+.logo {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 10px hidden coral;
+    margin: 5px 5px 10px 5px;
+    font-family: 'Roboto', sans-serif;
+    position: static;
+    top: 15px;
+}
+
+
+/* fotos inicio abajo */
+div div {
+    padding: 20px;
+    list-style: none;
+}
+
+/* Grids recorridos */
+
+.recorridomom {
+    display: grid;
+    grid-template-areas:
+        "nav nav"
+        "video video"
+        "promo1 promo1"
+        "promo2 promo2"
+        "footer footer";
+
+}
+
+.grillar1 {
+    grid-area: nav;
+}
+
+.grillar2 {
+    grid-area: video;
+}
+
+.grillar3 {
+    grid-area: promo1;
+    margin: 1em 1em 1em 1em;
+    border: #092327 solid;
+}
+
+.grillar4 {
+    grid-area: promo2;
+    margin: 1em 1em 1em 1em;
+    border: #092327 solid;
+}
+
+.grillar5 {
+    grid-area: footer;
+}
+
+.gridsrecorridos {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 45vh 40vh;
+}
+
+
+.videorecorrido {
+    text-align: center;
+    image-orientation: flip;
+}
+
+.parrafounorecorrido {
+    margin: 0, 5em;
+}
+
+.h1r {
+    margin: 0, 2em;
+}
+
+.h3rvideo {
+    margin: 1em;
+}
+
+/* COVID-19 */
+
+.grillapapa {
+
+    display: grid;
+    grid-template-areas:
+        "logo logo"
+        "covid covid"
+        "img img "
+        "txtup imgup"
+        "txtdown imgdown"
+        "footer footer";
+}
+
+.covidgrilla {
+    padding: 1em 1em 1em 1em;
+}
+
+.grillacero {
+    grid-area: logo;
+}
+
+.grillauno {
+    grid-area: covid;
+}
+
+.grillados {
+    grid-area: img;
+}
+
+.grillatres {
+    grid-area: imgup;
+}
+
+.grillacuatro {
+    grid-area: imgdown;
+}
+
+.grillacinco {
+    grid-area: txtup;
+}
+
+.grillaseis {
+    grid-area: txtdown;
+}
+
+.grillasiete {
+    grid-area: footer;
+}
+
+/* CONTACTOS */
+
+.hachetrescontactos {
+    text-align: left;
+}
+
+/* CONTACTOS */
+
+/* RESPOISIVE CELULAR COVID  */
+
+@media (max-width:576px) {
+    body {
+        background-color: rgb(55, 143, 146);
+    }
+
+    .grillapapa {
+
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "covid"
+            "img "
+            "imgup"
+            "imgdown"
+            "txtdown"
+            "footer";
+    }
+
+    .covidgrilla {
+        border: 1px
+    }
+
+    .grillauno {
+        grid-area: covid;
+    }
+
+    .grillados {
+        grid-area: img;
+        margin: 1em 1em 1em 3em;
+    }
+
+    .grillatres {
+        grid-area: imgup;
+        height: 80%;
+        width: 80%;
+    }
+
+    .grillacuatro {
+        grid-area: imgdown;
+        height: 80%;
+        width: 80%;
+
+    }
+
+    .grillaseis {
+        grid-area: txtdown;
+        margin: 0px 1em 1px 0px;
+    }
+
+}
+
+/* RESPOSIVE CELULAR INICIO  */
+
+@media (max-width:576px) {
+
+    .grillamadre {
+        grid-template-areas:
+            "inicioarriba inicioarriba"
+            "inicio inicio"
+            "fototxt fototxt"
+            "topicos topicos"
+            "footer footer";
+    }
+
+    .grillamom {
+        border: 1px;
+    }
+
+    .grillainicio1 {
+        grid-area: inicio;
+    }
+
+    .grillainicio2 {
+        grid-area: fototxt;
+    }
+
+    .grillainicio3 {
+        grid-area: topicos;
+    }
+
+    .grillainicio4 {
+        grid-area: video;
+        display: no;
+
+    }
+
+    .grillainicio6 {
+        grid-area: footer;
+
+    }
+
+    section footer div h4 {
+        display: none;
+    }
+
+    .grillainicio7 {
+        grid-area: inicioarriba;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        background: #ffffff;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+}
